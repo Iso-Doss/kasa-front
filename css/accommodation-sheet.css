@@ -1,0 +1,178 @@
+/* Main */
+
+main section.banner {
+    background: url("../images/fiche-logement.png");
+    background-size: cover;
+    border-radius: 25px;
+    height: 415px;
+    width: 100%;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-shadow {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-shadow a {
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.banner-shadow a:nth-child(1):hover {
+    background: rgba(255, 96, 96, 0.5);
+    border-radius: 25px 0 0 25px;
+}
+
+.banner-shadow a:nth-child(3):hover {
+    background: rgba(255, 96, 96, 0.5);
+    border-radius: 0 25px 25px 0;
+}
+
+.banner-shadow a i {
+    font-size: 2em;
+}
+
+.banner-shadow div {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 25px;
+}
+
+.banner-shadow div p {
+    font-size: 1em;
+}
+
+.accommodation-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.accommodation-details-bloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.accommodation-details-title {
+    font-weight: 500;
+    font-size: 2.25em;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.accommodation-details-location {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.accommodation-details-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.accommodation-details-tag {
+    background: #FF6060;
+    border-radius: 10px;
+    padding: 3px 30px;
+    color: white;
+}
+
+.accommodation-details-author {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.accommodation-details-author-first-last-name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.accommodation-details-author-first-last-name p {
+    color: #FF6060;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.accommodation-details-author-avatar {
+    height: 65px;
+    width: 65px;
+}
+
+.accommodation-details-author-avatar img {
+    border-radius: 50px;
+}
+
+.accommodation-details-rate {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.accommodation-details-rate .fa-solid.fa-star {
+    color: #E3E3E3;
+}
+
+.accommodation-details-rate .fa-solid.fa-star.active {
+    color: #FF6060;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+
+
+}
+
+@media screen and  (max-width: 768px) {
+
+    main section.banner {
+        background: url("../images/fiche-logement.png");
+        height: 250px;
+    }
+
+    .accommodation-details-bloc:nth-child(2){
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+
+    .accommodation-details-bloc {
+        width: 100%;
+    }
+
+    .accommodation-details-title {
+        font-size: 1em;
+    }
+
+    .accommodation-details-location{
+        font-size: 0.875em;
+    }
+
+    .accommodation-details-tag{
+        font-size: 10px;
+    }
+
+}

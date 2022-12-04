@@ -1,0 +1,48 @@
+/* Main */
+
+main section.banner {
+    background: url("../images/about-banner-image.png");
+    background-size: cover;
+    border-radius: 25px;
+    height: 220px;
+    width: 100%;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section.banner div.banner-shadow {
+    width: 100%;
+    height: 220px;
+    /*background: black;*/
+    /*opacity: 0.3;*/
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    position: absolute;
+}
+
+.cards {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.card {
+    width: 100% !important;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+
+
+}
+
+@media screen and  (max-width: 768px) {
+
+    .cards {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+}

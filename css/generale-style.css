@@ -1,0 +1,220 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* General styles */
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Html */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    pointer-events: none;
+    z-index: 200;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.loader.hide {
+    z-index: -1;
+    opacity: 0;
+    pointer-events: auto;
+}
+
+.loader .loader-ring {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border: 5px solid #ddd;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.loader .loader-ring::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 5px solid #FF6060;
+    border-top-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: rotate 1.5s linear infinite;
+    -webkit-animation: rotate 1.5s linear infinite;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+}
+
+header div {
+    width: 200px;
+}
+
+header div a img {
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    display: flex;
+    list-style-type: none;
+    margin-left: 50px;
+    color: #FF6060;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header nav ul li a.active {
+    text-decoration: underline;
+}
+
+header nav ul li a:hover, header nav ul li a:active {
+    text-decoration: underline;
+}
+
+/* Main */
+
+main {
+    width: 90%;
+    margin: 50px auto;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin-top: 50px;
+    width:47%;
+}
+
+.card-head {
+    background: #FF6060;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 35px;
+    /*width: 100%;*/
+}
+
+p.card-head-title {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.card-body {
+    background: #F7F7F7;
+    border-radius: 0 0 5px 5px;
+    padding: 15px 35px;
+    /*width: 100%;*/
+}
+
+.card-body p {
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #FF6060;
+}
+
+footer {
+    background: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+
+}
+
+@media screen and  (max-width: 768px) {
+
+    header div {
+        width: 100px;
+    }
+
+    header nav ul li a {
+        font-size: 0.89em;
+        margin-left: 20px;
+    }
+
+    main {
+        margin: 10px auto;
+    }
+
+    .cards {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card {
+        margin-top: 50px;
+        width:100%;
+    }
+
+    p.card-head-title {
+        font-size: 0.875em;
+    }
+
+    .card-body p {
+        font-size: 0.875em;
+    }
+
+}
