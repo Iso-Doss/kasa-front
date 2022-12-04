@@ -149,7 +149,7 @@ main section.banner {
 @media screen and  (max-width: 768px) {
 
     main section.banner {
-        background: url("../images/fiche-logement.png");
+        background: url("../images/fiche-logement-mobile.png");
         height: 250px;
     }
 

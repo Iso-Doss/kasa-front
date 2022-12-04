@@ -45,12 +45,13 @@ main section.housing {
 main section.housing a.lodging {
     width: calc((100% - 100px) / 3);
     height: 300px;
-    background: #FF6060;
+    background: url("../images/fiche-logement-mobile.png");
     border-radius: 10px;
     display: flex;
     align-items: flex-end;
     color: white;
     text-decoration: none;
+    background-size: cover;
 }
 
 main section.housing a.lodging p {
