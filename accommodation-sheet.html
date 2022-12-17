@@ -71,17 +71,34 @@
 
 <main>
 
-    <section class="banner">
+    <section class="kasa-slider">
 
-        <div class="banner-shadow">
+        <div class="kasa-slider-images-container">
+            <img src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-1.jpg" alt="Kasa slider image" class="kasa-slider-image">
+            <img src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-2.jpg" alt="Kasa slider image" class="kasa-slider-image">
+            <img src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-3.jpg" alt="Kasa slider image" class="kasa-slider-image">
+            <img src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-4.jpg" alt="Kasa slider image" class="kasa-slider-image">
+        </div>
 
-            <a href="#">
+        <div class="kasa-slider-shadow">
+
+            <a href="#" id="kasa-slider-prev" class="kasa-slider-prev">
                 <i class="fa-solid fa-chevron-left"></i>
             </a>
             <div>
-                <p>1/4</p>
+                <p>
+                    (
+                    <span id="kasa-slider-min-image">1</span>
+                    /
+                    <span id="kasa-slider-max-image">4</span>
+                    )
+                </p>
+                <span class="kasa-slider-dot-image"></span>
+                <span class="kasa-slider-dot-image"></span>
+                <span class="kasa-slider-dot-image"></span>
+                <span class="kasa-slider-dot-image"></span>
             </div>
-            <a href="#">
+            <a href="#" id="kasa-slider-next" class="kasa-slider-next">
                 <i class="fa-solid fa-chevron-right"></i>
             </a>
 
@@ -187,7 +204,8 @@
 
 </footer>
 
-<script src="js/script.js"></script>
+<script src="js/generale-script.js"></script>
+<script type="module" src="js/accommodation-sheet.js"></script>
 
 </body>
 </html>

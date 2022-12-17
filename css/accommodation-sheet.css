@@ -1,7 +1,6 @@
 /* Main */
 
-main section.banner {
-    background: url("../images/fiche-logement.png");
+.kasa-slider {
     background-size: cover;
     border-radius: 25px;
     height: 415px;
@@ -13,7 +12,21 @@ main section.banner {
     justify-content: center;
 }
 
-.banner-shadow {
+.kasa-slider-images-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.kasa-slider img {
+    display: none;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kasa-slider-shadow {
     width: 100%;
     height: 100%;
     border-radius: 25px;
@@ -23,38 +36,53 @@ main section.banner {
     justify-content: space-between;
 }
 
-.banner-shadow a {
+.kasa-slider-shadow a {
     height: 100%;
     text-decoration: none;
     color: white;
     display: flex;
     align-items: center;
     padding: 0 15px;
+    font-size: 2.5em;
 }
 
-.banner-shadow a:nth-child(1):hover {
+.kasa-slider-shadow a:nth-child(1):hover {
     background: rgba(255, 96, 96, 0.5);
     border-radius: 25px 0 0 25px;
 }
 
-.banner-shadow a:nth-child(3):hover {
+.kasa-slider-shadow a:nth-child(3):hover {
     background: rgba(255, 96, 96, 0.5);
     border-radius: 0 25px 25px 0;
 }
 
-.banner-shadow a i {
+.kasa-slider-shadow a i {
     font-size: 2em;
 }
 
-.banner-shadow div {
+.kasa-slider-shadow div {
     height: 100%;
     display: flex;
     align-items: flex-end;
     padding-bottom: 25px;
 }
 
-.banner-shadow div p {
+.kasa-slider-shadow div p {
     font-size: 1em;
+}
+
+.kasa-slider-dot-image {
+    height: 13px;
+    width: 13px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.kasa-slider-dot-image.active {
+    background-color: #FF6060;
 }
 
 .accommodation-details {
@@ -148,12 +176,15 @@ main section.banner {
 
 @media screen and  (max-width: 768px) {
 
-    main section.banner {
-        background: url("../images/fiche-logement-mobile.png");
+    .kasa-slider {
         height: 250px;
     }
 
-    .accommodation-details-bloc:nth-child(2){
+    .kasa-slider-shadow a {
+        font-size: 1em;
+    }
+
+    .accommodation-details-bloc:nth-child(2) {
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
@@ -167,11 +198,11 @@ main section.banner {
         font-size: 1em;
     }
 
-    .accommodation-details-location{
+    .accommodation-details-location {
         font-size: 0.875em;
     }
 
-    .accommodation-details-tag{
+    .accommodation-details-tag {
         font-size: 10px;
     }
 

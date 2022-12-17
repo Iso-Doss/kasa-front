@@ -19,6 +19,10 @@ body {
     margin: auto;
 }
 
+a{
+    outline-color: #FF6060;
+}
+
 .loader {
     display: flex;
     align-items: center;

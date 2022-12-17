@@ -1,38 +1,34 @@
 window.addEventListener("load", (event) => {
 
-    let loader_selector = document.getElementsByClassName("loader");
-    loader_selector[0].classList.add("hide");
+    fetch("data/logements.json").then((res) => res.json())
+        .then((housing) => {
 
-    let card_head_selectors = document.getElementsByClassName("card-head");
+            let kasa_housing_selector = document.getElementById("kasa-housing");
 
-    show_hide_card(card_head_selectors);
+            for (let i = 0; i < housing.length; i++) {
 
-    show_first_card(card_head_selectors);
+                let lodging = housing[i];
 
-    function show_hide_card(card_head_selectors) {
-        for (let i = 0; i < card_head_selectors.length; i++) {
-            card_head_selectors[i].addEventListener("click", function (e) {
-                e.preventDefault();
-                let card_selector = card_head_selectors[i].parentNode;
-                let card_body_selector = card_selector.lastElementChild;
-                if (card_body_selector.style.display === "none") {
-                    card_body_selector.style.display = "block";
-                } else {
-                    card_body_selector.style.display = "none";
-                }
-            });
-        }
-    }
+                let kasa_lodging_selector = document.createElement("a");
+                kasa_lodging_selector.classList.add("lodging");
+                kasa_lodging_selector.id = "kasa-lodging-" + lodging.id;
+                kasa_lodging_selector.href = "accommodation-sheet.html?id=" + lodging.id;
+                kasa_lodging_selector.style.background = "url('" + lodging.cover + "')";
 
-    function show_first_card(card_head_selectors) {
-        if (card_head_selectors.length > 2) {
-            for (let i = 0; i < card_head_selectors.length; i++) {
-                if (i > 0) {
-                    console.log(i);
-                    card_head_selectors[i].click();
-                }
+                let kasa_lodging_details_selector = document.createElement("div");
+                kasa_lodging_details_selector.classList.add("lodging-details");
+
+                let kasa_lodging_title_selector = document.createElement("p");
+                kasa_lodging_title_selector.innerText = lodging.title;
+
+                kasa_lodging_details_selector.appendChild(kasa_lodging_title_selector);
+                kasa_lodging_selector.appendChild(kasa_lodging_details_selector);
+                kasa_housing_selector.appendChild(kasa_lodging_selector);
+
             }
-        }
-    }
+        })
+        .catch(error => {
+            alert('Nous rencontrons un problème avec notre serveur. Veuillez réessayer plus tard. Si le problème persiste veuillez nous contacter.')
+        });
 
 });
