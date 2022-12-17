@@ -1,6 +1,6 @@
 /* Main */
 
-main section.banner {
+.kasa-banner {
     background: url("../images/about-banner-image.png");
     background-size: cover;
     border-radius: 25px;
@@ -13,7 +13,7 @@ main section.banner {
     justify-content: center;
 }
 
-main section.banner div.banner-shadow {
+.kasa-banner-shadow {
     width: 100%;
     height: 220px;
     /*background: black;*/
@@ -23,12 +23,12 @@ main section.banner div.banner-shadow {
     position: absolute;
 }
 
-.cards {
+.kasa-cards {
     margin-left: 10%;
     margin-right: 10%;
 }
 
-.card {
+.kasa-card {
     width: 100% !important;
 }
 
@@ -39,7 +39,7 @@ main section.banner div.banner-shadow {
 
 @media screen and  (max-width: 768px) {
 
-    .cards {
+    .kasa-cards {
         margin-left: 0;
         margin-right: 0;
     }

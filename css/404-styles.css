@@ -6,7 +6,7 @@ main {
     height: calc(100vh - 200px);
 }
 
-.not-found {
+.kasa-not-found {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -15,7 +15,7 @@ main {
     font-size: 18em;
 }
 
-.not-found-description {
+.kasa-not-found-description {
     font-weight: 500;
     font-size: 2.25em;
     display: flex;
@@ -24,7 +24,7 @@ main {
     color: #FF6060;
 }
 
-.not-found-back-to-home {
+.kasa-not-found-back-to-home {
     font-weight: 500;
     font-size: 1.125em;
     display: flex;
@@ -32,6 +32,7 @@ main {
     text-decoration-line: underline;
     color: #FF6060;
     text-align: center;
+    margin-top: 10%;
 }
 
 @media screen and  (max-width: 768px) {
@@ -40,15 +41,15 @@ main {
         height: calc(100vh - 250px);
     }
 
-    .not-found {
+    .kasa-not-found {
         font-size: 6em;
     }
 
-    .not-found-description {
+    .kasa-not-found-description {
         font-size: 1.125em;
     }
 
-    .not-found-back-to-home {
+    .kasa-not-found-back-to-home {
         font-size: 0.875em;
     }
 

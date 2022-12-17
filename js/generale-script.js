@@ -1,10 +1,10 @@
-window.addEventListener("load", (event) => {
+window.addEventListener("load", () => {
 
-    let loader_selector = document.getElementsByClassName("loader");
+    let kasa_loader_selector = document.getElementsByClassName("kasa-loader");
 
-    loader_selector[0].classList.add("hide");
+    kasa_loader_selector[0].classList.add("hide");
 
-    let card_head_selectors = document.getElementsByClassName("card-head");
+    let card_head_selectors = document.getElementsByClassName("kasa-card-head");
 
     show_hide_card(card_head_selectors);
 
@@ -35,27 +35,14 @@ window.addEventListener("load", (event) => {
         }
     }
 
-    function get_housing() {
-        let housing = [];
-        fetch("data/logements.json").then((res) => res.json())
-            .then((data) => {
-                housing = data;
-
-            })
-            .catch(error => {
-                alert('Nous rencontrons un problème avec notre serveur. Veuillez réessayer plus tard. Si le problème persiste veuillez nous contacter.')
-            });
-        return housing;
-    }
-
 });
 
-window.addEventListener("beforeunload", function (e) {
+window.addEventListener("beforeunload", function () {
 
-    let loader_selector = document.getElementsByClassName("loader");
+    let kasa_loader_selector = document.getElementsByClassName("kasa-loader");
 
-    loader_selector[0].classList.remove("hide");
+    kasa_loader_selector[0].classList.remove("hide");
 
-    loader_selector[0].classList.add("show");
+    kasa_loader_selector[0].classList.add("show");
 
 });

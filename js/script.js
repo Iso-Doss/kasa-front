@@ -10,13 +10,13 @@ window.addEventListener("load", (event) => {
                 let lodging = housing[i];
 
                 let kasa_lodging_selector = document.createElement("a");
-                kasa_lodging_selector.classList.add("lodging");
+                kasa_lodging_selector.classList.add("kasa-lodging");
                 kasa_lodging_selector.id = "kasa-lodging-" + lodging.id;
                 kasa_lodging_selector.href = "accommodation-sheet.html?id=" + lodging.id;
                 kasa_lodging_selector.style.background = "url('" + lodging.cover + "')";
 
                 let kasa_lodging_details_selector = document.createElement("div");
-                kasa_lodging_details_selector.classList.add("lodging-details");
+                kasa_lodging_details_selector.classList.add("kasa-lodging-details");
 
                 let kasa_lodging_title_selector = document.createElement("p");
                 kasa_lodging_title_selector.innerText = lodging.title;

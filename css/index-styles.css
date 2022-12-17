@@ -1,6 +1,6 @@
 /* Main */
 
-main section.banner {
+.kasa-banner {
     background: url("../images/home-banner-image.png");
     background-size: cover;
     border-radius: 25px;
@@ -13,23 +13,23 @@ main section.banner {
     justify-content: center;
 }
 
-main section.banner div.banner-shadow {
+.kasa-banner-shadow {
     width: 100%;
     height: 220px;
     /*background: black;*/
     /*opacity: 0.3;*/
-    background-color: rgba(0, 0, 0, 0.4);
+    /*background-color: rgba(0, 0, 0, 0.4);*/
     border-radius: 25px;
     position: absolute;
 }
 
-main section.banner h1 {
+.kasa-banner h1 {
     font-size: 48px;
     z-index: 1;
     font-weight: normal;
 }
 
-main section.housing {
+.kasa-housing {
     width: calc(100% - 100px);
     background: #F7F7F7;
     border-radius: 25px;
@@ -42,7 +42,7 @@ main section.housing {
     gap: 50px;
 }
 
-main section.housing a.lodging {
+.kasa-lodging {
     width: calc((100% - 100px) / 3);
     height: 300px;
     background: url("../images/fiche-logement-mobile.png");
@@ -51,17 +51,25 @@ main section.housing a.lodging {
     text-decoration: none;
 }
 
-.lodging-details{
+.kasa-lodging:hover {
+    transform: scale(1.06);
+}
+
+.kasa-lodging:hover .kasa-lodging-details {
+    background: rgba(0, 0, 0, 0.40);
+}
+
+.kasa-lodging-details {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.40);
+    /*background: rgba(0, 0, 0, 0.40);*/
     display: flex;
     align-items: flex-end;
     color: white;
 }
 
-main section.housing a.lodging p {
+.kasa-lodging p {
     margin-left: 10px;
     margin-bottom: 10px;
     font-size: 20px;
@@ -69,11 +77,11 @@ main section.housing a.lodging p {
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
 
-    main section.banner h1 {
+    .kasa-banner h1 {
         margin-left: 0.67em;
     }
 
-    main section.housing a.lodging {
+    .kasa-lodging {
         width: calc((100% - 100px) / 2);
     }
 
@@ -81,18 +89,18 @@ main section.housing a.lodging p {
 
 @media screen and  (max-width: 768px) {
 
-    main section.banner h1 {
+    .kasa-banner h1 {
         margin-left: 0.67em;
         font-size: 30px;
     }
 
-    main section.housing {
+    .kasa-housing {
         width: 100%;
         background: none;
         padding: 0;
     }
 
-    main section.housing a.lodging {
+    .kasa-lodging {
         width: 100%;
     }
 

@@ -19,11 +19,11 @@ body {
     margin: auto;
 }
 
-a{
+a {
     outline-color: #FF6060;
 }
 
-.loader {
+.kasa-loader {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,13 +43,13 @@ a{
     -o-transition: all 0.5s;
 }
 
-.loader.hide {
+.kasa-loader.hide {
     z-index: -1;
     opacity: 0;
     pointer-events: auto;
 }
 
-.loader .loader-ring {
+.kasa-loader .kasa-loader-ring {
     position: relative;
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@ a{
     -o-border-radius: 50%;
 }
 
-.loader .loader-ring::after {
+.kasa-loader .kasa-loader-ring::after {
     content: "";
     position: absolute;
     height: 100%;
@@ -85,6 +85,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -101,6 +102,7 @@ header div a img {
 
 header nav {
     display: flex;
+    align-items: center;
 }
 
 header nav ul {
@@ -133,18 +135,18 @@ main {
 }
 
 
-.cards {
+.kasa-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.card {
+.kasa-card {
     margin-top: 50px;
-    width:47%;
+    width: 47%;
 }
 
-.card-head {
+.kasa-card-head {
     background: #FF6060;
     color: white;
     text-decoration: none;
@@ -156,19 +158,19 @@ main {
     /*width: 100%;*/
 }
 
-p.card-head-title {
+.kasa-card-head-title {
     font-weight: 500;
     font-size: 1.5em;
 }
 
-.card-body {
+.kasa-card-body {
     background: #F7F7F7;
     border-radius: 0 0 5px 5px;
     padding: 15px 35px;
     /*width: 100%;*/
 }
 
-.card-body p {
+.kasa-card-body p {
     font-weight: 400;
     font-size: 1.5em;
     color: #FF6060;
@@ -203,21 +205,21 @@ footer {
         margin: 10px auto;
     }
 
-    .cards {
+    .kasa-cards {
         margin-left: 0;
         margin-right: 0;
     }
 
-    .card {
+    .kasa-card {
         margin-top: 50px;
-        width:100%;
+        width: 100%;
     }
 
-    p.card-head-title {
+    .kasa-card-head-title {
         font-size: 0.875em;
     }
 
-    .card-body p {
+    .kasa-card-body p {
         font-size: 0.875em;
     }
 
