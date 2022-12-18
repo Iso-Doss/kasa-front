@@ -14,6 +14,7 @@ window.addEventListener("load", (event) => {
                 kasa_lodging_selector.id = "kasa-lodging-" + lodging.id;
                 kasa_lodging_selector.href = "accommodation-sheet.html?id=" + lodging.id;
                 kasa_lodging_selector.style.background = "url('" + lodging.cover + "')";
+                kasa_lodging_selector.style.backgroundSize = "cover";
 
                 let kasa_lodging_details_selector = document.createElement("div");
                 kasa_lodging_details_selector.classList.add("kasa-lodging-details");
