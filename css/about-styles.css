@@ -23,12 +23,12 @@
     position: absolute;
 }
 
-.kasa-cards {
+.kasa-accordion-cards {
     margin-left: 10%;
     margin-right: 10%;
 }
 
-.kasa-card {
+.kasa-accordion-card {
     width: 100% !important;
 }
 
@@ -39,7 +39,7 @@
 
 @media screen and  (max-width: 768px) {
 
-    .kasa-cards {
+    .kasa-accordion-cards {
         margin-left: 0;
         margin-right: 0;
     }

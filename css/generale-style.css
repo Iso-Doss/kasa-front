@@ -80,6 +80,16 @@ a {
     -webkit-animation: rotate 1.5s linear infinite;
 }
 
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
 /* Header */
 header {
     display: flex;
@@ -135,18 +145,18 @@ main {
 }
 
 
-.kasa-cards {
+.kasa-accordion-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.kasa-card {
+.kasa-accordion-card {
     margin-top: 50px;
     width: 47%;
 }
 
-.kasa-card-head {
+.kasa-accordion-card-head {
     background: #FF6060;
     color: white;
     text-decoration: none;
@@ -158,19 +168,19 @@ main {
     /*width: 100%;*/
 }
 
-.kasa-card-head-title {
+.kasa-accordion-card-head-title {
     font-weight: 500;
     font-size: 1.5em;
 }
 
-.kasa-card-body {
+.kasa-accordion-card-body {
     background: #F7F7F7;
     border-radius: 0 0 5px 5px;
     padding: 15px 35px;
     /*width: 100%;*/
 }
 
-.kasa-card-body p {
+.kasa-accordion-card-body p {
     font-weight: 400;
     font-size: 1.5em;
     color: #FF6060;
@@ -205,21 +215,21 @@ footer {
         margin: 10px auto;
     }
 
-    .kasa-cards {
+    .kasa-accordion-cards {
         margin-left: 0;
         margin-right: 0;
     }
 
-    .kasa-card {
+    .kasa-accordion-card {
         margin-top: 50px;
         width: 100%;
     }
 
-    .kasa-card-head-title {
+    .kasa-accordion-card-head-title {
         font-size: 0.875em;
     }
 
-    .kasa-card-body p {
+    .kasa-accordion-card-body p {
         font-size: 0.875em;
     }
 

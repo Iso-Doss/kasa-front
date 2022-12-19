@@ -4,7 +4,7 @@ window.addEventListener("load", () => {
 
     kasa_loader_selector[0].classList.add("hide");
 
-    let card_head_selectors = document.getElementsByClassName("kasa-card-head");
+    let card_head_selectors = document.getElementsByClassName("kasa-accordion-card-head");
 
     show_hide_card(card_head_selectors);
 
